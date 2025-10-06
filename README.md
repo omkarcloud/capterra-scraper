@@ -4,7 +4,7 @@ Extract Capterra product data—names, descriptions, reviews, ratings, pricing, 
 
 ## Disclaimer for Capterra Scraper Project
 
-*> This Capterra Scraper is provided for educational and research purposes only. By using this Capterra Scraper, you agree to comply with local and international laws regarding data scraping and privacy. The authors and contributors are not responsible for any misuse of this software. This tool should not be used to violate the rights of others, or for unethical purposes.*
+> This Capterra Scraper is provided for educational and research purposes only. By using this Capterra Scraper, you agree to comply with local and international laws regarding data scraping and privacy. The authors and contributors are not responsible for any misuse of this software. This tool should not be used to violate the rights of others, or for unethical purposes.
 
 We take the concerns of the Capterra Scraper Project very seriously. For any concerns, please contact Chetan Jain at [chetan@omkar.cloud](mailto:chetan@omkar.cloud). We will promptly reply to your emails.
 
