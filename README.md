@@ -1,50 +1,50 @@
-# G2 Scraper
+# Capterra Scraper
 
-Extract G2 product data—names, descriptions, reviews, ratings, comparisons, alternatives, and more—into clean Excel files in seconds.
+Extract Capterra product data—names, descriptions, reviews, ratings, pricing, integrations, and more—into clean Excel files in seconds.
 
-## Disclaimer for G2 Scraper Project
+## Disclaimer for Capterra Scraper Project
 
-*> This G2 Scraper is provided for educational and research purposes only. By using this G2 Scraper, you agree to comply with local and international laws regarding data scraping and privacy. The authors and contributors are not responsible for any misuse of this software. This tool should not be used to violate the rights of others, for unethical purposes, or to use data in an unauthorized or illegal manner.*
+*> This Capterra Scraper is provided for educational and research purposes only. By using this Capterra Scraper, you agree to comply with local and international laws regarding data scraping and privacy. The authors and contributors are not responsible for any misuse of this software. This tool should not be used to violate the rights of others, or for unethical purposes.*
 
-We take the concerns of the G2 Scraper Project very seriously. For any concerns, please contact Chetan Jain at [chetan@omkar.cloud](mailto:chetan@omkar.cloud). We will promptly reply to your emails.
+We take the concerns of the Capterra Scraper Project very seriously. For any concerns, please contact Chetan Jain at [chetan@omkar.cloud](mailto:chetan@omkar.cloud). We will promptly reply to your emails.
 
-## 🎥 Watch G2 Scraper in Action (60-Second Demo)
+## 🎥 Watch Capterra Scraper in Action (60-Second Demo)
 
-See how easy it is to extract hundreds of G2 product listings in under a minute.
+See how easy it is to extract hundreds of Capterra product listings in under a minute.
 
-[![G2 Scraper Demo Video](https://raw.githubusercontent.com/omkarcloud/g2-scraper/master/images/g2-scraper-featured-image.png)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)
+[![Capterra Scraper Demo Video](https://raw.githubusercontent.com/omkarcloud/capterra-scraper/master/images/capterra-scraper-featured-image.png)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)
 
-## ⚡ Why Choose Our G2 Scraper?
+## ⚡ Why Choose Our Capterra Scraper?
 
 * **Unlimited Extractions** – No monthly fees, no account restrictions. Extract as much data as you need.
-* **Massive Time Savings** – Get hundreds of product listings in minutes, not hours. Perfect for market researchers, B2B marketers, and competitive intelligence analysts.
+* **Massive Time Savings** – Get hundreds of product listings in minutes, not hours. Perfect for market researchers, competitive analysts, and B2B sales teams.
 * **Complete Data Coverage** – [See what you can extract.](#what-data-is-available)
 
-## 📌 What is G2 Scraper?
+## 📌 What is Capterra Scraper?
 
-**omkar.cloud G2 Scraper** is a powerful tool that extracts structured product data directly from G2.com search results without requiring any coding knowledge.
+**omkar.cloud Capterra Scraper** is a powerful tool that extracts structured product data directly from Capterra.com search results without requiring any coding knowledge.
 
-Simply **enter your search criteria**, and our scraper handles the rest—extracting, parsing, and delivering clean, ready-to-use G2 product data in Excel format.
+Simply **enter your search criteria**, and our scraper handles the rest—extracting, parsing, and delivering clean, ready-to-use Capterra product data in Excel format.
 
 ## 🚀 How to Use It (3 Simple Steps)
 
 ### Step 1: Create Your Free Account
 
-Sign up for a [Free Account on omkar.cloud](https://www.omkar.cloud/auth/sign-up/?redirect=/tools/g2-scraper/input/&utm_source=github&utm_medium=repo&utm_campaign=g2-repo). It's free, and we don't ask for your credit card.
+Sign up for a [Free Account on omkar.cloud](https://www.omkar.cloud/auth/sign-up/?redirect=/tools/capterra-scraper/input/&utm_source=github&utm_medium=repo&utm_campaign=capterra-repo). It's free, and we don't ask for your credit card.
 
-[![Press Try Free](https://raw.githubusercontent.com/omkarcloud/assets/master/images/try-free.png)](https://www.omkar.cloud/auth/sign-up/?redirect=/tools/g2-scraper/input/)
+[![Press Try Free](https://raw.githubusercontent.com/omkarcloud/assets/master/images/try-free.png)](https://www.omkar.cloud/auth/sign-up/?redirect=/tools/capterra-scraper/input/)
 
 ### Step 2: Enter Your Search Criteria
 
-Paste one or more G2 search URLs (category URLs, product URLs, or product slugs)
+Enter product URLs, product slugs or category URLs, you want to extract data for.
 
-![Enter Input and Run](https://www.omkar.cloud/images/tools/g2/input.png)
+![Enter Input and Run](https://www.omkar.cloud/images/tools/capterra/input.png)
 
 ### Step 3: Download Your Data
 
-Click "Extract" and get your structured G2 product data immediately as Excel, CSV, or JSON.
+Click "Extract" and get your structured Capterra product data immediately as Excel, CSV, or JSON.
 
-![Enjoy Results](https://www.omkar.cloud/images/tools/g2/output.png)
+![Enjoy Results](https://www.omkar.cloud/images/tools/capterra/output.png)
 
 ## 📄 What Data is Available?
 
@@ -52,87 +52,112 @@ Click "Extract" and get your structured G2 product data immediately as Excel, CS
 
 ```json
 {
-  "product_id": 2075,
-  "product_name": "Jenkins",
-  "product_logo": "https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_816e7e27d5ac09363053c4ca43e63c5c/jenkins.png",
-  "g2_link": "https://www.g2.com/products/jenkins/reviews",
-  "what_is": "The leading open source automation server, Jenkins provides hundreds of plugins to support building, deploying and automating any project.",
-  "product_description": "Jenkins is an application that monitors executions of repeated jobs, such as building a software project or jobs run by cron.",
-  "reviews": 513,
+  "product_id": 19319,
+  "name": "Jira",
+  "link": "https://www.capterra.com/p/19319/JIRA/",
+  "logo": "https://gdm-catalog-fmapi-prod.imgix.net/ProductLogo/e1b492c5-8a97-4b86-a422-d317b2480afa.png",
+  "website": null,
   "rating": 4.4,
-  "category": {
-    "name": "Continuous Integration Tools",
-    "link": "https://www.g2.com/categories/continuous-integration"
-  },
-  "parent_category": {
-    "name": "DevOps Software",
-    "link": "https://www.g2.com/categories/devops"
-  },
-  "company_id": 1523,
-  "seller": "https://www.g2.com/sellers/the-continuous-delivery-foundation-cdf",
-  "company_phone": null,
-  "company_location": "San Francisco, CA",
-  "company_founded_year": 2019,
-  "twitter": "https://twitter.com/cdeliveryfdn",
-  "number_of_followers_on_twitter": 8125,
-  "linkedin": "https://www.linkedin.com/company/19100461/",
-  "number_of_employees_on_linkedin": 26,
-  "is_claimed": true,
+  "reviews": 14735,
+  "country": "United States",
+  "year_founded": "2013",
+  "what_is": "Jira is the #1 agile project management tool for all teams to plan, track, and manage any project.",
+  "target_audience": "All teams",
+  "main_category": "https://www.capterra.com/it-project-management-software/",
   "categories": [
-    {
-      "name": "AWS Marketplace",
-      "link": "https://www.g2.com/categories/aws-marketplace"
-    },
-    {
-      "name": "Continuous Delivery",
-      "link": "https://www.g2.com/categories/continuous-delivery-tools"
-    }
+    "https://www.capterra.com/project-tracking-software/",
+    "https://www.capterra.com/task-management-software/"
   ],
-  "screenshots": [
-    "https://images.g2crowd.com/uploads/attachment/file/40846/jenkins_screenshot.jpg"
-  ],
+  "offers_free_trial": true,
+  "offers_free_version": true,
+  "pricing_description": "Jira Software offers flexible pricing. Small teams: $0 per user/month for up to 10 users",
+  "currency": "USD",
   "pricing_plans": [
     {
-      "plan_name": "Small-Business",
-      "plan_price": "",
-      "plan_description": "48% less expensive than the avg. Continuous Integration product"
+      "plan_name": "Free",
+      "price": null,
+      "pricing_model": "Other",
+      "payment_frequency": "Per Month"
+    },
+    {
+      "plan_name": "Standard",
+      "price": 7.16,
+      "pricing_model": "Per User",
+      "payment_frequency": "Per Month"
     }
   ],
+  "images_and_videos": [
+    {
+      "is_video": true,
+      "image_url": "https://i.ytimg.com/vi/PQa3NFB_LRg/mqdefault.jpg",
+      "video_url": "https://www.youtube.com/watch?v=PQa3NFB_LRg"
+    }
+  ],
+  "popular_alternative": {
+    "product_id": 169607,
+    "name": "Clockify",
+    "link": "https://www.capterra.com/p/169607/Clockify/",
+    "rating": 4.8,
+    "reviews": 9057
+  },
   "alternatives": [
     {
-      "name": "GitHub",
-      "link": "https://www.g2.com/products/github/reviews",
-      "rating": 4,
-      "reviews": 2164
+      "product_id": 184581,
+      "name": "Asana",
+      "rating": 4.5,
+      "reviews": 13058
+    }
+  ],
+  "provider": "Atlassian",
+  "support_options": [
+    "Email/Help Desk",
+    "Chat",
+    "24/7 (Live rep)"
+  ],
+  "has_open_api": "Yes",
+  "deployment_options": [
+    "Cloud",
+    "SaaS",
+    "Web-Based"
+  ],
+  "mobile_apps": ["Android", "iOS"],
+  "training_options": ["Webinars", "Documentation"],
+  "integrations": [
+    {
+      "name": "Confluence",
+      "logo": "https://gdm-catalog-fmapi-prod.imgix.net/ProductLogo/505b4ccb-8f48-405a-bd30-39a80ed24293.png"
     }
   ],
   "comparisons": [
     {
-      "link": "https://www.g2.com/compare/azure-devops-server-vs-jenkins",
-      "name": "Azure DevOps Server",
-      "logo": "https://images.g2crowd.com/uploads/product/image/small_square/azure-devops-server.png"
+      "name": "Jira vs Clockify",
+      "link": "https://www.capterra.com/compare/19319-169607/JIRA-vs-Clockify"
     }
   ],
-  "star_distribution": {
-    "1": 2,
-    "2": 5,
-    "3": 23,
-    "4": 148,
-    "5": 335
+  "rating_breakdown": {
+    "ease_of_use_rating": 4.1,
+    "functionality_rating": 4.4,
+    "value_for_money_rating": 4.3,
+    "customer_support_rating": 4.2,
+    "likelihood_to_recommend": 7.4
   },
-  "all_reviews": [
+  "pros_list": [
+    "I like the functionality the ability to run real time reports and issue tracking with ease."
+  ],
+  "cons_list": [
+    "Unable to clone the tasks when it is Done."
+  ],
+  "highlighted_reviews": [
     {
-      "review_id": 9989003,
-      "review_title": "Jenkins Review: Simplifying Automation and Integration",
-      "review_content": "What do you like best about Jenkins?\nJenkins is a great tool...",
-      "review_rating": 5.0,
+      "review_id": "Capterra___6484625",
+      "title": "Powerful Project Management Tool.",
+      "rating": 5.0,
+      "overall": "Jira has proven to be an effective solution for managing software development projects.",
       "reviewer": {
-        "reviewer_name": "Dr habeeb M.",
-        "reviewer_job_title": "Data scientist",
-        "reviewer_link": "https://www.g2.com/users/404f3753-ddf5-4d63-ba67-35a9a35c9ca8"
-      },
-      "publish_date": "2024-08-11T00:00:00",
-      "reviewer_company_size": "Mid-Market(51-1000 emp.)"
+        "full_name": "Suman H.",
+        "job_title": "Manager",
+        "company_size": "11-50 employees"
+      }
     }
   ]
 }
@@ -141,39 +166,64 @@ Click "Extract" and get your structured G2 product data immediately as Excel, CS
 ### 📊 Category Data Sample
 
 ```json
-{
-  "name": "Salesforce Sales Cloud",
-  "link": "https://www.g2.com/products/salesforce-salesforce-sales-cloud/reviews",
-  "users": [
-    "Account Executive",
-    "Account Manager"
-  ],
-  "industries": [
-    "Computer Software",
-    "Information Technology and Services"
-  ],
-  "market_segments": [
-    "46% Mid-Market",
-    "34% Enterprise"
-  ]
-}
+[
+    {
+        "link": "https://www.capterra.com/p/136797/RAYNET-CRM/",
+        "id": 136797
+    },
+    {
+        "link": "https://www.capterra.com/p/169054/Backstop/",
+        "id": 169054
+    },
+    {
+        "link": "https://www.capterra.com/p/130149/bpm-online-CRM/",
+        "id": 130149
+    },
+    {
+        "link": "https://www.capterra.com/p/155928/Zoho-CRM/",
+        "id": 155928
+    },
+    {
+        "link": "https://www.capterra.com/p/204998/Bigin-by-Zoho-CRM/",
+        "id": 204998
+    },
+    {
+        "link": "https://www.capterra.com/p/152373/HubSpot-CRM/",
+        "id": 152373
+    },
+    {
+        "link": "https://www.capterra.com/p/132666/Pipedrive/",
+        "id": 132666
+    },
+    {
+        "link": "https://www.capterra.com/p/123032/Nimble/",
+        "id": 123032
+    },
+    {
+        "link": "https://www.capterra.com/p/135757/NetSuite/",
+        "id": 135757
+    },
+    {
+        "link": "https://www.capterra.com/p/76390/Infusionsoft/",
+        "id": 76390
+    },
+    {
+        "link": "https://www.capterra.com/p/113540/Bitrix24/",
+        "id": 113540
+    }
+]
 ```
-
-### 📈 G2 Statistics:
-- **Products**: Over 185K+ products are listed on G2. View the complete list [here](https://www.omkar.cloud/downloads/g2-products-links.json).
-- **Categories**: Over 2,163 categories are listed on G2. View the complete list [here](https://www.omkar.cloud/downloads/g2-categories-links.json).
-- **Reviews**: Over 2.9M+ reviews are listed on G2.
 
 ## What Can I Do With It?
 
-- **Competitive Intelligence** – Monitor competitor products, features, pricing, and customer feedback to stay ahead.
-- **Market Research** – Analyze market trends, popular products, and emerging categories in your industry.
-- **Lead Generation** – Identify potential customers by analyzing who's using which software and their pain points.
-- **Product Development** – Understand feature requirements and user needs based on thousands of real reviews.
-- **Sales Enablement** – Gather intelligence about prospects' current tech stack and switching patterns.
-- **Content Marketing** – Create data-driven content, comparison articles, and industry reports based on G2 insights.
-- **Investment Research** – Evaluate software companies and market opportunities for venture capital or acquisition decisions.
-- **Partnership Development** – Identify potential integration partners and complementary products.
+- **Competitive Intelligence** – Monitor competitor products, pricing strategies, feature sets, and customer feedback patterns.
+- **Market Research** – Analyze software market trends, popular features, and pricing models across different categories.
+- **Lead Generation** – Identify potential customers by analyzing which companies use specific software and their pain points from reviews.
+- **Product Development** – Understand user needs, feature requests, and common complaints to inform your roadmap.
+- **Sales Enablement** – Build comparison reports, competitive battle cards, and objection-handling guides based on real user feedback.
+- **Pricing Strategy** – Research competitor pricing models, plans, and value propositions to optimize your own pricing.
+- **Partnership Development** – Identify complementary products and potential integration partners based on user needs.
+- **Investment Research** – Evaluate software companies for venture capital or acquisition opportunities based on market position and user satisfaction.
 
 Ultimately, it helps you make data-driven decisions to grow your B2B software or services business.
 
@@ -183,10 +233,9 @@ Ultimately, it helps you make data-driven decisions to grow your B2B software or
 
 After December 1st, 2025, we'll introduce a paid tier with a generous free tier that will continue to meet most users' needs.
 
-## I Need other Data points. Do You Have It?
+## I Need Other Data Points. Do You Have It?
 
-This scraper is optimized for G2. If you need other platforms, reach out on WhatsApp—we can add what you need or suggest the best alternative for your use case.
-
+This scraper is for Capterra. If you need other platforms, reach out on WhatsApp—we can add what you need or suggest the best alternative for your use case.
 
 [![Contact Us on WhatsApp about Additional Data](https://raw.githubusercontent.com/omkarcloud/assets/master/images/whatsapp-us.png)](https://api.whatsapp.com/send?phone=918295042963&text=Hi,%20I%20need%20help%20with%20data.)
 
@@ -197,22 +246,22 @@ We want to give you a great experience:
 - Our open source work is sponsored by [1000+ people on GitHub.](https://github.com/sponsors/omkarcloud)
 - Free to try, reliable, and continuously maintained scraper.
 - 90-Day Refund Guarantee for peace of mind. We make refunds so simple, you can get a refund in just [2 clicks](https://www.omkar.cloud/refund-process).
-- Have a question? We're ready to help you via [WhatsApp](https://api.whatsapp.com/send?phone=918295042963&text=Hi,%20I%20would%20like%20to%20learn%20more%20about%20your%20G2%20Scraper) or [email](mailto:chetan@omkar.cloud?subject=Help%20with%20G2%20Scraper&body=I%20need%20help%20with%20using%20the%20G2%20Scraper.).
+- Have a question? We're ready to help you via [WhatsApp](https://api.whatsapp.com/send?phone=918295042963&text=Hi,%20I%20would%20like%20to%20learn%20more%20about%20your%20Capterra%20Scraper) or [email](mailto:chetan@omkar.cloud?subject=Help%20with%20Capterra%20Scraper&body=I%20need%20help%20with%20using%20the%20Capterra%20Scraper.).
 
 ## 📞 Need Help or Have Questions?
 
-We're here to help you extract G2 data efficiently:
+We're here to help you extract Capterra data efficiently:
 
-* **WhatsApp:** [Message us for instant support](https://api.whatsapp.com/send?phone=918295042963&text=Hi,%20I%20would%20like%20to%20learn%20more%20about%20your%20G2%20Scraper)
+* **WhatsApp:** [Message us for instant support](https://api.whatsapp.com/send?phone=918295042963&text=Hi,%20I%20would%20like%20to%20learn%20more%20about%20your%20Capterra%20Scraper)
 
-[![Contact Us on WhatsApp about G2 Scraper](https://raw.githubusercontent.com/omkarcloud/assets/master/images/whatsapp-us.png)](https://api.whatsapp.com/send?phone=918295042963&text=Hi,%20I%20would%20like%20to%20learn%20more%20about%20your%20G2%20Scraper)
+[![Contact Us on WhatsApp about Capterra Scraper](https://raw.githubusercontent.com/omkarcloud/assets/master/images/whatsapp-us.png)](https://api.whatsapp.com/send?phone=918295042963&text=Hi,%20I%20would%20like%20to%20learn%20more%20about%20your%20Capterra%20Scraper)
 
-* **Email:** [Get in touch](mailto:chetan@omkar.cloud?subject=Help%20with%20G2%20Scraper&body=I%20need%20help%20with%20using%20the%20G2%20Scraper.)
+* **Email:** [Get in touch](mailto:chetan@omkar.cloud?subject=Help%20with%20Capterra%20Scraper&body=I%20need%20help%20with%20using%20the%20Capterra%20Scraper.)
 
-[![Contact Us on Email about G2 Scraper](https://raw.githubusercontent.com/omkarcloud/assets/master/images/ask-on-email.png)](mailto:chetan@omkar.cloud?subject=Help%20with%20G2%20Scraper&body=I%20need%20help%20with%20using%20the%20G2%20Scraper.)
+[![Contact Us on Email about Capterra Scraper](https://raw.githubusercontent.com/omkarcloud/assets/master/images/ask-on-email.png)](mailto:chetan@omkar.cloud?subject=Help%20with%20Capterra%20Scraper&body=I%20need%20help%20with%20using%20the%20Capterra%20Scraper.)
 
 We'll respond within **24 hours** 🚀
 
 ---
 
-## 🔥 **[Try It Now & Get G2 Product Data in Minutes!](https://www.omkar.cloud/auth/sign-up/?redirect=/tools/g2-scraper/input/&utm_source=github&utm_medium=repo&utm_campaign=g2-repo)** 🚀
+## 🔥 **[Try It Now & Get Capterra Product Data in Minutes!](https://www.omkar.cloud/auth/sign-up/?redirect=/tools/capterra-scraper/input/&utm_source=github&utm_medium=repo&utm_campaign=capterra-repo)** 🚀
