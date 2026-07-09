@@ -8,6 +8,8 @@ Scrape Capterra product details, reviews, ratings, pricing, alternatives, and fu
 - 100 free requests per month. No credit card required.
 - Need all of Capterra at once? The complete dataset is available for purchase. [Contact us](https://api.whatsapp.com/send?phone=918178804274&text=I%20want%20to%20buy%20the%20full%20Capterra%20dataset.) to get it.
 
+Find the complete list of [108K Capterra products links](https://www.omkar.cloud/downloads/capterra-products-links.csv) and [8,300 Capterra categories links](https://www.omkar.cloud/downloads/capterra-categories-links.csv), ready to use.
+
 Here's a sample response for a **product details** request:
 
 ```json
