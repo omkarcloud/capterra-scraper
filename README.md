@@ -6,6 +6,7 @@ Scrape Capterra product details, reviews, ratings, pricing, alternatives, and fu
 
 - Get full Capterra product profiles, browse products by category, and pull the complete product/category directory — all via 1 API.
 - 100 free requests per month. No credit card required.
+- Need all of Capterra at once? The complete dataset is available for purchase. [Contact us](https://api.whatsapp.com/send?phone=918178804274&text=I%20want%20to%20buy%20the%20full%20Capterra%20dataset.) to get it.
 
 Here's a sample response for a **product details** request:
 
@@ -67,10 +68,6 @@ curl -X GET "https://capterra-scraper.omkar.cloud/capterra/products?product=http
 ```
 
 ## Quick Start (Python)
-
-```bash
-pip install requests
-```
 
 ```python
 import requests
