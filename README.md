@@ -391,7 +391,13 @@ All in structured JSON. Ready to use in your app.
 
 ### How accurate is the data?
 
-Data is pulled from Capterra in real time. Every API call fetches live data — not cached or stale results. Ratings, reviews, pricing, and product details reflect what's on Capterra right now.
+The data comes straight from real Capterra profiles — real ratings, real reviews, real pricing, real product details. No estimates, no made-up numbers.
+
+### How do I get the newest data?
+
+The data served via the API is a few months old. For most use cases — competitive research, lead gen, market analysis — that works great.
+
+If you need the newest data, you'll want the full Capterra dataset — all 108,000+ products with their latest reviews. [WhatsApp us](https://api.whatsapp.com/send?phone=918178804274&text=I%20want%20to%20buy%20the%20full%20Capterra%20dataset%20with%20the%20newest%20data.) to get the complete, up-to-date dataset.
 
 ### What product link format do I pass?
 
