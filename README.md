@@ -386,6 +386,10 @@ elif response.status_code == 429:
 
 All in structured JSON. Ready to use in your app.
 
+Find the complete 108K Capterra Product list here: https://www.omkar.cloud/downloads/capterra-products-links.csv
+
+Find the complete 8,300 Capterra Categories list here: https://www.omkar.cloud/downloads/capterra-categories-links.csv
+
 ### How accurate is the data?
 
 The data comes straight from real Capterra profiles — real ratings, real reviews, real pricing, real product details. No estimates, no made-up numbers.
