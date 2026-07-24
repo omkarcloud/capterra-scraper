@@ -10,6 +10,12 @@ Scrape Capterra product details, reviews, ratings, pricing, alternatives, and fu
 
 Find the complete list of [108K Capterra products links](https://www.omkar.cloud/downloads/capterra-products-links.csv) and [8,300 Capterra categories links](https://www.omkar.cloud/downloads/capterra-categories-links.csv), ready to use.
 
+## ▶️ Video Tutorial
+
+Watch the complete API walkthrough: 
+
+[![Capterra Scraper API Walkthrough](https://raw.githubusercontent.com/omkarcloud/capterra-scraper/master/capterra-scraper-youtube-video-preview.png)](https://www.youtube.com/watch?v=gmC4A9JA-H0)
+
 Here's a sample response for a **product details** request:
 
 ```json
