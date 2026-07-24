@@ -4,9 +4,11 @@ Scrape Capterra product details, reviews, ratings, pricing, alternatives, and fu
 
 - **Rated Excellent — 4.6 based on 21 reviews** on [Trustpilot](https://www.trustpilot.com/review/omkar.cloud). Our open source work is sponsored by [1000+ devs on GitHub](https://github.com/sponsors/omkarcloud).
 
-[![Try the Capterra Scraper API in the live playground — free, no signup](https://img.shields.io/badge/%E2%96%B6%20Playground-Run%20a%20live%20request%2C%20free-brightgreen?style=for-the-badge)](https://www.omkar.cloud/tools/capterra-scraper/playground?utm_source=github&utm_medium=readme&utm_content=badge)
-<!-- gif of the playground -->
+[![Try the Capterra Scraper API in the live playground — free, no signup](https://img.shields.io/badge/%E2%96%B6%20Playground-Run%20a%20live%20request%2C%20free-brightgreen?style=for-the-badge)](https://www.omkar.cloud/tools/capterra-scraper/playground?utm_source=github&utm_medium=cpc&utm_content=badge)
+
 [![Free Plan: 100 requests per month](https://img.shields.io/badge/Free%20tier-100%20requests%2Fmonth-blue?style=for-the-badge)](#pricing)
+
+[![Capterra Scraper API playground — run a live request in your browser, free, no signup](https://raw.githubusercontent.com/omkarcloud/capterra-scraper/master/capterra-scraper-playground.png)](https://www.omkar.cloud/tools/capterra-scraper/playground?utm_source=github&utm_medium=cpc&utm_content=hero-image)
 
 ## Example: Capterra Product Data in One Request
 
@@ -78,7 +80,7 @@ GET https://capterra-scraper.omkar.cloud/capterra/products?product=https://www.c
 
 *Trimmed for readability — the full response has 40+ fields. See the [sample response](#product-details--reviews) in the API reference.*
 
-**[Run this exact request in the Playground — no signup, no key →](https://www.omkar.cloud/tools/capterra-scraper/playground?utm_source=github&utm_medium=readme&utm_content=example)**
+**[Run this exact request in the Playground — no signup, no key →](https://www.omkar.cloud/tools/capterra-scraper/playground?utm_source=github&utm_medium=cpc&utm_content=example)**
 
 The playground comes prefilled with this request and runs it against the live API in your browser. The JSON it returns is identical to what the API returns.
 
@@ -103,7 +105,7 @@ print(response.json())
 
 ### Product Details & Reviews
 
-▶ [Try it live in the Playground — no key needed →](https://www.omkar.cloud/tools/capterra-scraper/playground?utm_source=github&utm_medium=readme&utm_content=endpoint-products)
+▶ [Try it live in the Playground — no key needed →](https://www.omkar.cloud/tools/capterra-scraper/playground?utm_source=github&utm_medium=cpc&utm_content=endpoint-products)
 
 ```
 GET https://capterra-scraper.omkar.cloud/capterra/products?product=https://www.capterra.com/p/19319/JIRA/
@@ -216,7 +218,7 @@ Returns 40+ fields including rating breakdown across 5 dimensions, highlighted r
 
 ### Products by Category
 
-▶ [Try it live in the Playground →](https://www.omkar.cloud/tools/capterra-scraper/playground?utm_source=github&utm_medium=readme&utm_content=endpoint-categories)
+▶ [Try it live in the Playground →](https://www.omkar.cloud/tools/capterra-scraper/playground?utm_source=github&utm_medium=cpc&utm_content=endpoint-categories)
 
 ```
 GET https://capterra-scraper.omkar.cloud/capterra/categories?category=https://www.capterra.com/customer-relationship-management-software/
@@ -249,7 +251,7 @@ Pass the full Capterra category link (`https://www.capterra.com/customer-relatio
 
 Get every Capterra category link — a directory of all 8,000+ categories you can feed into the Products by Category endpoint.
 
-▶ [Try it live in the Playground →](https://www.omkar.cloud/tools/capterra-scraper/playground?utm_source=github&utm_medium=readme&utm_content=endpoint-category-links)
+▶ [Try it live in the Playground →](https://www.omkar.cloud/tools/capterra-scraper/playground?utm_source=github&utm_medium=cpc&utm_content=endpoint-category-links)
 
 ```
 GET https://capterra-scraper.omkar.cloud/capterra/category-links
@@ -281,7 +283,7 @@ No parameters required.
 
 Get every Capterra product link — a directory of all 108,000+ products you can feed into the Product Details endpoint.
 
-▶ [Try it live in the Playground →](https://www.omkar.cloud/tools/capterra-scraper/playground?utm_source=github&utm_medium=readme&utm_content=endpoint-product-links)
+▶ [Try it live in the Playground →](https://www.omkar.cloud/tools/capterra-scraper/playground?utm_source=github&utm_medium=cpc&utm_content=endpoint-product-links)
 
 ```
 GET https://capterra-scraper.omkar.cloud/capterra/product-links
@@ -317,7 +319,7 @@ No parameters required.
 
 1 API call = 1 request, regardless of how many results come back. Rate limits are monthly quotas per plan — there is no per-second throttling to engineer around.
 
-Every plan starts free — [create your API key →](https://www.omkar.cloud/auth/sign-up?redirect=/api-key&utm_source=github&utm_medium=readme&utm_content=pricing-signup). No credit card for the free tier.
+Every plan starts free — [create your API key →](https://www.omkar.cloud/auth/sign-up?redirect=/api-key&utm_source=github&utm_medium=cpc&utm_content=pricing-signup). No credit card for the free tier.
 
 ## Capterra Dataset Downloads
 
@@ -329,7 +331,7 @@ The API serves pre-crawled data that may be a few months old — fine for compet
 
 ### Can I try the API before signing up?
 
-Yes. The playground runs live requests in your browser — free, no account, no API key. [Try it in the Playground →](https://www.omkar.cloud/tools/capterra-scraper/playground?utm_source=github&utm_medium=readme&utm_content=faq)
+Yes. The playground runs live requests in your browser — free, no account, no API key. [Try it in the Playground →](https://www.omkar.cloud/tools/capterra-scraper/playground?utm_source=github&utm_medium=cpc&utm_content=faq)
 
 ### How do I scrape Capterra reviews?
 
