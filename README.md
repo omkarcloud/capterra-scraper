@@ -378,6 +378,13 @@ Use the **Product Links** and **Category Links** endpoints. They return the comp
 
 Prefer files? Download the full directories directly, free: [108,726 Capterra product links](https://www.omkar.cloud/downloads/capterra-products-links.csv) · [8,399 Capterra category links](https://www.omkar.cloud/downloads/capterra-categories-links.csv)
 
+## More Review-Data APIs
+
+One omkar.cloud account gets you a free plan on every API — same signup, no credit card.
+
+- **[G2 Scraper API](https://www.omkar.cloud/tools/g2-scraper/about?utm_source=github&utm_medium=cpc&utm_content=cross-sell-g2)** — the same clean JSON, pointed at G2: star distributions, up to 2,500 full reviews per product, pricing plans, feature scores, company info, and social profiles for 185,648 products. Cross-reference a vendor's Capterra and G2 ratings before you trust either.
+- **[Trustpilot Scraper API](https://www.omkar.cloud/tools/trustpilot-scraper-api/about?utm_source=github&utm_medium=cpc&utm_content=cross-sell-trustpilot)** — real-time Trustpilot data for 1.6M+ companies, pulled live: search companies by keyword, full profiles with rating distributions, every review for any domain, even a reviewer's complete history. 200 free requests/month.
+
 ## Video Tutorial
 
 Prefer a walkthrough? Watch the complete API demo:
