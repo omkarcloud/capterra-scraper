@@ -1,28 +1,27 @@
 # Capterra Scraper API
 
-Scrape Capterra product details, reviews, ratings, pricing, alternatives, and full category listings via a simple REST API. Pass a product or category URL, get clean structured JSON back. Start free with 100 requests/month — no credit card required.
+Scrape Capterra product details, reviews, ratings, pricing, alternatives, and full category listings via a simple REST API. Pass a product or category URL, get clean structured JSON back — 40+ fields per product, including the 5-dimension rating breakdown, pricing plans, integrations, deployment options, pros/cons, and highlighted reviews.
 
-## Key Features
+- **Rated Excellent — 4.6 based on 21 reviews** on [Trustpilot](https://www.trustpilot.com/review/omkar.cloud). Our open source work is sponsored by [1000+ devs on GitHub](https://github.com/sponsors/omkarcloud).
 
-- Get full Capterra product profiles, browse products by category, and pull the complete product/category directory — all via 1 API.
-- 100 free requests per month. No credit card required.
-- Need all of Capterra at once? The complete dataset is available for purchase. [Contact us](https://api.whatsapp.com/send?phone=918178804274&text=I%20want%20to%20buy%20the%20full%20Capterra%20dataset.) to get it.
+[![Try the Capterra Scraper API in the live playground — free, no signup](https://img.shields.io/badge/%E2%96%B6%20Playground-Run%20a%20live%20request%2C%20free-brightgreen?style=for-the-badge)](https://www.omkar.cloud/tools/capterra-scraper/playground?utm_source=github&utm_medium=readme&utm_content=badge)
+<!-- gif of the playground -->
+[![Free Plan: 100 requests per month](https://img.shields.io/badge/Free%20tier-100%20requests%2Fmonth-blue?style=for-the-badge)](#pricing)
 
-Find the complete list of [108K Capterra products links](https://www.omkar.cloud/downloads/capterra-products-links.csv) and [8,300 Capterra categories links](https://www.omkar.cloud/downloads/capterra-categories-links.csv), ready to use.
+## Example: Capterra Product Data in One Request
 
-## ▶️ Video Tutorial
+One request to the Capterra reviews API:
 
-Watch the complete API walkthrough: 
-
-[![Capterra Scraper API Walkthrough](https://raw.githubusercontent.com/omkarcloud/capterra-scraper/master/capterra-scraper-youtube-video-preview.png)](https://www.youtube.com/watch?v=gmC4A9JA-H0)
-
-Here's a sample response for a **product details** request:
+```
+GET https://capterra-scraper.omkar.cloud/capterra/products?product=https://www.capterra.com/p/19319/JIRA/
+```
 
 ```json
 {
   "name": "Jira",
   "link": "https://www.capterra.com/p/19319/JIRA/",
   "provider": "Atlassian",
+  "what_is": "Jira is the #1 agile project management tool for all teams to plan, track, and manage any project. Customize workflows to your team's processes, integrate with over 3,000 apps, automate any task or process with a few clicks.",
   "rating": 4.4,
   "reviews": 14735,
   "rating_breakdown": {
@@ -32,55 +31,65 @@ Here's a sample response for a **product details** request:
     "customer_support_rating": 4.2,
     "likelihood_to_recommend": 7.4
   },
+  "country": "United States",
+  "year_founded": "2013",
+  "target_audience": "All teams",
+  "offers_free_trial": true,
+  "offers_free_version": true,
   "pricing_plans": [
+    { "plan_name": "Free", "price": null, "pricing_model": "Other", "payment_frequency": "Per Month" },
+    { "plan_name": "Standard", "price": 7.16, "pricing_model": "Per User", "payment_frequency": "Per Month" }
+  ],
+  "deployment_options": ["Cloud", "SaaS"],
+  "integrations": [
+    { "name": "Confluence" },
+    { "name": "Salesforce Sales Cloud" }
+  ],
+  "alternatives": [
+    { "name": "Asana", "link": "https://www.capterra.com/p/184581/Asana-PM/", "reviews": 13058, "rating": 4.5 },
+    { "name": "Trello", "link": "https://www.capterra.com/p/211559/Trello/", "reviews": 23243, "rating": 4.5 }
+  ],
+  "pros_list": [
+    "I like the functionality the ability to run real time reports and issue tracking with ease. I love the collaboration amongst peers and so every stakeholder is informed."
+  ],
+  "cons_list": [
+    "Particularly for new users, the learning curve can be quite hard. The UI can feel overwhelming at first."
+  ],
+  "highlighted_reviews": [
     {
-      "plan_name": "Standard",
-      "price": 7.16,
-      "pricing_model": "Per User",
-      "payment_frequency": "Per Month"
+      "title": "Powerful Project Management Tool.",
+      "rating": 5.0,
+      "likelihood_to_recommend": 10.0,
+      "overall": "Jira has proven to be an effective solution for managing software development projects, facilitating better teamwork and task streamlining.",
+      "pros_text": "Jira has great project tracking and management features and is quite customizable. The agile boards make work management and sprint tracking easy.",
+      "cons_text": "Particularly for new users, the learning curve can be quite hard.",
+      "reviewer": {
+        "full_name": "Suman H.",
+        "job_title": "Manager",
+        "company_size": "11-50 employees",
+        "industry": "Civil Engineering",
+        "used_product_for": "2+ years"
+      },
+      "link": "https://www.capterra.com/p/19319/JIRA/reviews/Capterra___6484625/"
     }
   ]
 }
 ```
 
-## Get API Key
+*Trimmed for readability — the full response has 40+ fields. See the [sample response](#product-details--reviews) in the API reference.*
 
-Create an account at [omkar.cloud](https://www.omkar.cloud/auth/sign-up?redirect=/api-key) to get your API key.
+**[Run this exact request in the Playground — no signup, no key →](https://www.omkar.cloud/tools/capterra-scraper/playground?utm_source=github&utm_medium=readme&utm_content=example)**
 
-It takes just 2 minutes to sign up. You get 100 free requests every month for detailed Capterra data.
+The playground comes prefilled with this request and runs it against the live API in your browser. The JSON it returns is identical to what the API returns.
 
-This is a well built product, and your search for the best Capterra Scraper API ends right here.
+## Start Getting Data in Minutes
 
-## Quick Start
-
-```bash
-curl -X GET "https://capterra-scraper.omkar.cloud/capterra/products?product=https://www.capterra.com/p/19319/JIRA/" \
-  -H "API-Key: YOUR_API_KEY"
-```
-
-```json
-{
-  "name": "Jira",
-  "link": "https://www.capterra.com/p/19319/JIRA/",
-  "provider": "Atlassian",
-  "rating": 4.4,
-  "reviews": 14735,
-  "rating_breakdown": {
-    "ease_of_use_rating": 4.1,
-    "functionality_rating": 4.4,
-    "value_for_money_rating": 4.3,
-    "customer_support_rating": 4.2,
-    "likelihood_to_recommend": 7.4
-  }
-}
-```
-
-## Quick Start (Python)
+Python and Node.js integration examples are available for every endpoint in the playground, so you can get Capterra data in minutes instead of days.
 
 ```python
 import requests
 
-# Get full product details
+# Scrape Capterra reviews and pricing for a product
 response = requests.get(
     "https://capterra-scraper.omkar.cloud/capterra/products",
     params={"product": "https://www.capterra.com/p/19319/JIRA/"},
@@ -92,31 +101,15 @@ print(response.json())
 
 ## API Reference
 
-### Product Details
+### Product Details & Reviews
+
+▶ [Try it live in the Playground — no key needed →](https://www.omkar.cloud/tools/capterra-scraper/playground?utm_source=github&utm_medium=readme&utm_content=endpoint-products)
 
 ```
-GET https://capterra-scraper.omkar.cloud/capterra/products
+GET https://capterra-scraper.omkar.cloud/capterra/products?product=https://www.capterra.com/p/19319/JIRA/
 ```
 
-#### Parameters
-
-| Parameter | Required | Default | Description |
-|-----------|----------|---------|-------------|
-| `product` | Yes | — | Full Capterra product link (e.g., `https://www.capterra.com/p/19319/JIRA/`). |
-
-#### Example
-
-```python
-import requests
-
-response = requests.get(
-    "https://capterra-scraper.omkar.cloud/capterra/products",
-    params={"product": "https://www.capterra.com/p/19319/JIRA/"},
-    headers={"API-Key": "YOUR_API_KEY"}
-)
-
-print(response.json())
-```
+Pass the full Capterra product link — the one with the product ID (`https://www.capterra.com/p/19319/JIRA/`).
 
 #### Response
 
@@ -223,29 +216,13 @@ Returns 40+ fields including rating breakdown across 5 dimensions, highlighted r
 
 ### Products by Category
 
+▶ [Try it live in the Playground →](https://www.omkar.cloud/tools/capterra-scraper/playground?utm_source=github&utm_medium=readme&utm_content=endpoint-categories)
+
 ```
-GET https://capterra-scraper.omkar.cloud/capterra/categories
+GET https://capterra-scraper.omkar.cloud/capterra/categories?category=https://www.capterra.com/customer-relationship-management-software/
 ```
 
-#### Parameters
-
-| Parameter | Required | Default | Description |
-|-----------|----------|---------|-------------|
-| `category` | Yes | — | Full Capterra category link (e.g., `https://www.capterra.com/customer-relationship-management-software/`). |
-
-#### Example
-
-```python
-import requests
-
-response = requests.get(
-    "https://capterra-scraper.omkar.cloud/capterra/categories",
-    params={"category": "https://www.capterra.com/customer-relationship-management-software/"},
-    headers={"API-Key": "YOUR_API_KEY"}
-)
-
-print(response.json())
-```
+Pass the full Capterra category link (`https://www.capterra.com/customer-relationship-management-software/`).
 
 #### Response
 
@@ -272,24 +249,13 @@ print(response.json())
 
 Get every Capterra category link — a directory of all 8,000+ categories you can feed into the Products by Category endpoint.
 
+▶ [Try it live in the Playground →](https://www.omkar.cloud/tools/capterra-scraper/playground?utm_source=github&utm_medium=readme&utm_content=endpoint-category-links)
+
 ```
 GET https://capterra-scraper.omkar.cloud/capterra/category-links
 ```
 
 No parameters required.
-
-#### Example
-
-```python
-import requests
-
-response = requests.get(
-    "https://capterra-scraper.omkar.cloud/capterra/category-links",
-    headers={"API-Key": "YOUR_API_KEY"}
-)
-
-print(response.json())
-```
 
 #### Response
 
@@ -315,24 +281,13 @@ print(response.json())
 
 Get every Capterra product link — a directory of all 108,000+ products you can feed into the Product Details endpoint.
 
+▶ [Try it live in the Playground →](https://www.omkar.cloud/tools/capterra-scraper/playground?utm_source=github&utm_medium=readme&utm_content=endpoint-product-links)
+
 ```
 GET https://capterra-scraper.omkar.cloud/capterra/product-links
 ```
 
 No parameters required.
-
-#### Example
-
-```python
-import requests
-
-response = requests.get(
-    "https://capterra-scraper.omkar.cloud/capterra/product-links",
-    headers={"API-Key": "YOUR_API_KEY"}
-)
-
-print(response.json())
-```
 
 #### Response
 
@@ -352,30 +307,37 @@ print(response.json())
 
 </details>
 
-## Error Handling
+## Pricing
 
-```python
-response = requests.get(
-    "https://capterra-scraper.omkar.cloud/capterra/products",
-    params={"product": "https://www.capterra.com/p/19319/JIRA/"},
-    headers={"API-Key": "YOUR_API_KEY"}
-)
+| Plan | Price | Requests/Month |
+|------|-------|----------------|
+| Free | $0 | 100 |
+| Grow | $48 | 15,000 |
+| Scale | $148 | 75,000 |
 
-if response.status_code == 200:
-    data = response.json()
-elif response.status_code == 401:
-    # Invalid API key
-    pass
-elif response.status_code == 429:
-    # Rate limit exceeded
-    pass
-```
+1 API call = 1 request, regardless of how many results come back. Rate limits are monthly quotas per plan — there is no per-second throttling to engineer around.
+
+Every plan starts free — [create your API key →](https://www.omkar.cloud/auth/sign-up?redirect=/api-key&utm_source=github&utm_medium=readme&utm_content=pricing-signup). No credit card for the free tier.
+
+## Capterra Dataset Downloads
+
+Free to download, no signup: [108,726 Capterra product links](https://www.omkar.cloud/downloads/capterra-products-links.csv) · [8,399 Capterra category links](https://www.omkar.cloud/downloads/capterra-categories-links.csv)
+
+The API serves pre-crawled data that may be a few months old — fine for competitive research, lead generation, and market analysis. If you need the newest reviews across all 108,000+ products, the full refreshed dataset is available for purchase: [WhatsApp us](https://api.whatsapp.com/send?phone=918178804274&text=I%20want%20to%20buy%20the%20full%20Capterra%20dataset.) or [email us](mailto:happy.to.help@omkar.cloud?subject=Full%20Capterra%20Dataset).
 
 ## FAQs
 
+### Can I try the API before signing up?
+
+Yes. The playground runs live requests in your browser — free, no account, no API key. [Try it in the Playground →](https://www.omkar.cloud/tools/capterra-scraper/playground?utm_source=github&utm_medium=readme&utm_content=faq)
+
+### How do I scrape Capterra reviews?
+
+Call the [Product Details & Reviews](#product-details--reviews) endpoint with a product URL. Every response includes highlighted reviews with full pros/cons text, ratings, the 5-dimension rating breakdown, and rich reviewer context — job title, company size, industry, and how long they used the product.
+
 ### What data does the API return?
 
-**Product Details** returns 40+ fields per product:
+**Product Details & Reviews** returns 40+ fields per product:
 - Product name, logo, provider, and Capterra link
 - Overall rating and total review count
 - Rating breakdown — ease of use, functionality, value for money, customer support, likelihood to recommend
@@ -392,45 +354,37 @@ elif response.status_code == 429:
 
 **Category Links** and **Product Links** return the full directory of category and product URLs, with a total count.
 
-All in structured JSON. Ready to use in your app.
-
-Find the complete 108K Capterra Product list here: https://www.omkar.cloud/downloads/capterra-products-links.csv
-
-Find the complete 8,300 Capterra Categories list here: https://www.omkar.cloud/downloads/capterra-categories-links.csv
-
 ### How accurate is the data?
 
-The data comes straight from real Capterra profiles — real ratings, real reviews, real pricing, real product details. No estimates, no made-up numbers.
+The data comes straight from real Capterra profiles — real ratings, reviews, pricing, and product details.
 
-### How do I get the newest data?
+### How fresh is the data, and how do I get the newest?
 
-The data served via the API is a few months old. For most use cases — competitive research, lead gen, market analysis — that works great.
+API responses come from a pre-crawled dataset that may be a few months old. For the newest reviews across the full catalog, see [Capterra Dataset Downloads](#capterra-dataset-downloads).
 
-If you need the newest data, you'll want the full Capterra dataset — all 108,000+ products with their latest reviews. [WhatsApp us](https://api.whatsapp.com/send?phone=918178804274&text=I%20want%20to%20buy%20the%20full%20Capterra%20dataset%20with%20the%20newest%20data.) to get the complete, up-to-date dataset.
+### Will I get blocked or need proxies?
+
+No. We handle the scraping infrastructure — you call a normal REST API and never touch Capterra directly, so there are no proxies, headless browsers, or CAPTCHAs on your side.
 
 ### What product link format do I pass?
 
 Pass the full Capterra product URL — the one with the product ID, like `https://www.capterra.com/p/19319/JIRA/`. For categories, pass the full category URL, like `https://www.capterra.com/customer-relationship-management-software/`.
 
-### Does the Product Details endpoint include reviews?
-
-Yes. Every product response includes highlighted reviews with full pros/cons text, ratings, and rich reviewer context — job title, company size, industry, and how long they used the product.
-
 ### How do I discover products and categories to scrape?
 
-Use the **Product Links** and **Category Links** endpoints. They return the complete directory — 108,000+ products and 8,000+ categories — so you can crawl Capterra end to end without guessing URLs.
+Use the **Product Links** and **Category Links** endpoints. They return the complete directory — 108,726 products and 8,399 categories — so you can crawl Capterra end to end without guessing URLs.
 
-## Rate Limits
+Prefer files? Download the full directories directly, free: [108,726 Capterra product links](https://www.omkar.cloud/downloads/capterra-products-links.csv) · [8,399 Capterra category links](https://www.omkar.cloud/downloads/capterra-categories-links.csv)
 
-| Plan | Price | Requests/Month |
-|------|-------|----------------|
-| Free | $0 | 100 |
-| Grow | $48 | 15,000 |
-| Scale | $148 | 75,000 |
+## Video Tutorial
 
-## Questions? We have answers.
+Prefer a walkthrough? Watch the complete API demo:
 
-Reach out anytime. We will solve your query within 1 working day.
+[![Capterra Scraper API Walkthrough](https://raw.githubusercontent.com/omkarcloud/capterra-scraper/master/capterra-scraper-youtube-video-preview.png)](https://www.youtube.com/watch?v=gmC4A9JA-H0)
+
+## Support
+
+Built by developers, for developers — when you reach out, you talk to the engineers who built the API, not a support script. Message us anytime and we'll solve your query within 1 working day.
 
 [![Contact Us on WhatsApp about Capterra Scraper](https://raw.githubusercontent.com/omkarcloud/assets/master/images/whatsapp-us.png)](https://api.whatsapp.com/send?phone=918178804274&text=I%20have%20a%20question%20about%20the%20Capterra%20Scraper%20API.)
 
